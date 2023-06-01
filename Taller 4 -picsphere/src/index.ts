@@ -1,17 +1,42 @@
 import "./components/export"
 import "./screens/export"
+import { addObserver, appState } from "./store";
+import { Screens } from "./types/store";
 
 class AppContainer extends HTMLElement {
     constructor(){
         super();
         this.attachShadow({mode: "open"})
+        // addObserver(this);
     }
-
+       
     connectedCallback() {
         this.render()
     }
-
+       
     render() {
+
+
+        // switch (appState.screen) {
+        //     case Screens.LOGIN:
+        //       const login = this.ownerDocument.createElement("app-login");
+        //       this.shadowRoot?.appendChild(login);
+        //       break;
+    
+        //     case Screens.REGISTER:
+        //       const signup = this.ownerDocument.createElement("app-register");
+        //       signup.innerText = "esta es la pantalla de signup";
+        //       this.shadowRoot?.appendChild(signup);
+        //       break;
+    
+        //     case Screens.DASBOARD:
+        //       const dasboard = this.ownerDocument.createElement("app-dasboard");
+        //       this.shadowRoot?.appendChild(dasboard);
+        //       break;
+    
+        //     default:
+        //       break;
+        //   }
 
 
         const Main_wrapper = this.ownerDocument.createElement('section');
@@ -67,12 +92,12 @@ class AppContainer extends HTMLElement {
         search_wrapper.appendChild(search)
 
 
-        const profile_wrapper = this.ownerDocument.createElement('div');
-        profile_wrapper.classList.add("profile_wrapper")
-        Main_wrapper.appendChild(profile_wrapper);
+        const user_profile_wrapper = this.ownerDocument.createElement('div');
+        user_profile_wrapper.classList.add("user_profile_wrapper")
+        Main_wrapper.appendChild(user_profile_wrapper);
 
-        const profile = this.ownerDocument.createElement('app-profile');
-        profile_wrapper.appendChild(profile)
+        const profile = this.ownerDocument.createElement('user_profile');
+        user_profile_wrapper.appendChild(profile)
 
        
     }
