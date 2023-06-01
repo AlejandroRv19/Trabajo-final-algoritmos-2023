@@ -1,7 +1,12 @@
+import { addObserver } from "../../store";
+import { loadCss } from "../../utils/main_styles";
+import dasboardstyle from "./dasboardstyle.css"
+
 export default class dasboard extends HTMLElement {
     constructor(){
         super();
         this.attachShadow({mode: "open"})
+        addObserver(this);
     }
 
     connectedCallback() {
@@ -9,8 +14,12 @@ export default class dasboard extends HTMLElement {
     }
 
     render() {
-        const something = this.ownerDocument.createElement('div');
-        this.shadowRoot?.appendChild(something);
+
+        loadCss(this, dasboardstyle)
+
+        const btn = this.ownerDocument.createElement('button');
+        btn.classList.add ("hola")
+        this.shadowRoot?.appendChild(btn);
     }
 }
 

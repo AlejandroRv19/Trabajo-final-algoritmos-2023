@@ -1,5 +1,6 @@
 import { loadCss } from "../../utils/main_styles";
 import formstyle from "./formstyle.css"
+import {AttrLogin}from "../../utils/interfaces"
 
 export default class form extends HTMLElement {
     constructor(){
@@ -31,6 +32,10 @@ export default class form extends HTMLElement {
         const input1 = this.ownerDocument.createElement('input');
         input1.type = "text";
         input1.placeholder = "Phone number, username, or email";
+        // input1.addEventListener("change", (e: any) => {
+            // AttrLogin.name = e.target.value
+
+        // });
         div.appendChild(input1);
 
         const div2 = this.ownerDocument.createElement('div');
@@ -40,6 +45,10 @@ export default class form extends HTMLElement {
         const input2 = this.ownerDocument.createElement('input');
         input2.type = "password";
         input2.placeholder = "password";
+        // input2.addEventListener("change", (e: any) => {
+            // AttrLogin.name = e.target.value
+
+        // });
         div2.appendChild(input2);
     }
 }
