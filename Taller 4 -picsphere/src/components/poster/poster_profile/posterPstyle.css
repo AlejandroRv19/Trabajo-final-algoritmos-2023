@@ -1,0 +1,10 @@
+.Main_box {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .profile_image_div,
+  .profile_name_div {
+    margin-right: 10px; 
+  }
+  

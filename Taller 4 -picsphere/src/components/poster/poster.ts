@@ -36,8 +36,16 @@ export default class poster extends HTMLElement {
         Main_box.appendChild(div3)
         
         
+        const div4 = this.ownerDocument.createElement('app-poster_likes')
+        div4.classList.add("poster_likes")
+        Main_box.appendChild(div4)
+
+
+        const div5 = this.ownerDocument.createElement('app-poster_comments')
+        div5.classList.add("poster_comments")
+        Main_box.appendChild(div5)
         
-      
+       
         
         
        

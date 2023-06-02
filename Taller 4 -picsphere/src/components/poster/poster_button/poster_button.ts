@@ -1,3 +1,7 @@
+import { loadCss } from "../../../utils/main_styles";
+import posterbstyle from "./posterbstyle.css"
+
+
 export default class poster_button extends HTMLElement {
     constructor(){
         super();
@@ -9,49 +13,50 @@ export default class poster_button extends HTMLElement {
     }
 
     render() {
+              
+        loadCss(this, posterbstyle)
+        
         const Main_box = this.ownerDocument.createElement('section');
         Main_box.classList.add("Main_box")
         this.shadowRoot?.appendChild(Main_box);
-
-
-        const buttonsDiv = this.ownerDocument.createElement('div');
-        buttonsDiv.classList.add("buttons_div");
-        Main_box.appendChild(buttonsDiv);
         
         const buttonLikesDiv = this.ownerDocument.createElement('div');
-        buttonLikesDiv.classList.add("button_div");
-        buttonsDiv.appendChild(buttonLikesDiv);
+        buttonLikesDiv.classList.add("button_div_Likes");
+        Main_box.appendChild(buttonLikesDiv);
 
         const buttonLikes = this.ownerDocument.createElement('button');
-        buttonLikes.innerText = "Likes";
+        buttonLikes.classList.add("buttonComments");
+        buttonLikes.innerHTML = '<img src=".././src/utils/img/like_img.png" alt="likes" />'
         buttonLikesDiv.appendChild(buttonLikes);
 
         
         const buttonCommentsDiv = this.ownerDocument.createElement('div');
-        buttonCommentsDiv.classList.add("button_div");
-        buttonsDiv.appendChild(buttonCommentsDiv);
+        buttonCommentsDiv.classList.add("button_div_Comments");
+        Main_box.appendChild(buttonCommentsDiv);
 
         const buttonComments = this.ownerDocument.createElement('button');
-        buttonComments.innerText = "Comments";
+        buttonComments.classList.add("buttonComments");
+        buttonComments.innerHTML = '<img src=".././src/utils/img/message_button.png" alt="comments" />'
         buttonCommentsDiv.appendChild(buttonComments);
 
 
-        
         const buttonShareDiv = this.ownerDocument.createElement('div');
-        buttonShareDiv.classList.add("button_div");
-        buttonsDiv.appendChild(buttonShareDiv);
+        buttonShareDiv.classList.add("button_div_Share");
+        Main_box.appendChild(buttonShareDiv);
 
         const buttonShare = this.ownerDocument.createElement('button');
-        buttonShare.innerText = "Share";
+        buttonShare.classList.add("buttonShare");
+        buttonShare.innerHTML = '<img src=".././src/utils/img/share_img.png" alt="Share" />'
         buttonShareDiv.appendChild(buttonShare);
 
         
         const buttonSaveDiv = this.ownerDocument.createElement('div');
-        buttonSaveDiv.classList.add("button_div");
-        buttonsDiv.appendChild(buttonSaveDiv);
+        buttonSaveDiv.classList.add("button_div_Save");
+        Main_box.appendChild(buttonSaveDiv);
         
         const buttonSave = this.ownerDocument.createElement('button');
-        buttonSave.innerText = "Save";
+        buttonSave.classList.add("buttonSave");
+        buttonSave.innerHTML = '<img src="../src/utils/img/save_img.png" alt="save" />'
         buttonSaveDiv.appendChild(buttonSave);
         
     

@@ -1,4 +1,4 @@
-export default class left_block extends HTMLElement {
+export default class poster_comments extends HTMLElement {
     constructor(){
         super();
         this.attachShadow({mode: "open"})
@@ -27,4 +27,4 @@ export default class left_block extends HTMLElement {
     }
 }
 
-customElements.define('app-left_block', left_block)
+customElements.define('app-poster_comments', poster_comments)

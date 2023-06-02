@@ -2,6 +2,8 @@ import "./components/export"
 import "./screens/export"
 import { addObserver, appState } from "./store";
 import { Screens } from "./types/store";
+import { loadCss } from "./utils/main_styles";
+import index from "./utils/index.css"
 
 class AppContainer extends HTMLElement {
     constructor(){
@@ -16,6 +18,7 @@ class AppContainer extends HTMLElement {
        
     render() {
 
+        loadCss (this, index)
 
         // switch (appState.screen) {
         //     case Screens.LOGIN:

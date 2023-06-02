@@ -1,6 +1,13 @@
-.hola{
+.div_poster{
+
+
+    flex-direction: center;
+}
 
 
 
-    background-color: blue;
+
+.body{
+
+    margin: 0%;
 }

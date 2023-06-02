@@ -1,3 +1,6 @@
+import { loadCss } from "../../../utils/main_styles";
+import posterM from "./posterM.css"
+
 export default class poster_img extends HTMLElement {
     constructor(){
         super();
@@ -9,6 +12,8 @@ export default class poster_img extends HTMLElement {
     }
 
     render() {
+
+        loadCss(this, posterM)
         const Main_box = this.ownerDocument.createElement('section');
         Main_box.classList.add("Main_box")
         this.shadowRoot?.appendChild(Main_box);
@@ -18,8 +23,8 @@ export default class poster_img extends HTMLElement {
         Main_box.appendChild(imageDiv);
         
          const postImage = this.ownerDocument.createElement('img');
-        postImage.src = "ruta/a/la/imagen-del-post.jpg";
-        imageDiv.appendChild(postImage);
+         postImage.src = "../src/utils/img/Poster_img.png";
+         imageDiv.appendChild(postImage);
     }
 }
 
