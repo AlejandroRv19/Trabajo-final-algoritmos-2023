@@ -35,7 +35,7 @@ export default class posterprofile extends HTMLElement {
         Main_box.appendChild(profileNameDiv);
   
     
-        const profileName = this.ownerDocument.createElement('h1');
+        const profileName = this.ownerDocument.createElement('p');
         profileName.innerText = "miukdi";
         profileNameDiv.appendChild(profileName);
 

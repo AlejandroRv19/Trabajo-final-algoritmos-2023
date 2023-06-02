@@ -3,14 +3,14 @@
     flex-direction: row;
     display: flex;
     border: 2px solid  rgba(84, 84, 84, 0.087);
-    
+    margin-top: 1%;
   }
   
   .nav_bar{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+     margin-top: 10px;
+    margin-bottom: 10px; 
   }
   
   .nav_button {

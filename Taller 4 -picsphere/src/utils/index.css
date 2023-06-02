@@ -3,12 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajusta la altura según tus necesidades */
+    height: 100vh; 
   }
   
   .Main_wrapper div {
     align-self: center;
-    /* Estilos adicionales para los divs dentro de Main_wrapper */
+    
+  }
+
+
+  .dasboard_wrapper{
+
+
+    display:show;
   }
   
   .login_wrapper{
@@ -16,3 +23,12 @@
 
     display:none;
   }
+
+  .register_wrapper{
+
+
+    display:none;
+  }
+
+
+ 

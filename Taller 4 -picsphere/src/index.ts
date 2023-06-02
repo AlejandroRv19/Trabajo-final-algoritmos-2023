@@ -5,6 +5,7 @@ import { Screens } from "./types/store";
 import { loadCss } from "./utils/main_styles";
 import index from "./utils/index.css"
 
+
 class AppContainer extends HTMLElement {
     constructor(){
         super();

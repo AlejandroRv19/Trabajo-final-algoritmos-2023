@@ -1,13 +1,24 @@
+
 .div_poster{
-
-
     flex-direction: center;
 }
 
 
+.main_box{
+    display: flex;
+    flex-direction: column;
 
+}
 
 .body{
 
     margin: 0%;
+}
+
+.div_Stories{
+    flex-direction: row;
+    display: flex;
+    overflow-x: auto; 
+    white-space: nowrap; 
+   
 }
