@@ -1,0 +1,48 @@
+.Main_box{
+
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+
+
+}
+
+.div_text_1{
+
+    margin-left: 23%;
+}
+
+
+.div_text{
+    margin-left: 19%;
+
+}
+
+
+.text2{
+    margin-left: 21%;
+
+}
+
+
+.text1{
+
+    margin-left: 5%;
+}
+
+.div_image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profile_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

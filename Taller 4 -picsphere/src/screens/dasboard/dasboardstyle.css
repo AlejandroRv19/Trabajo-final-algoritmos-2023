@@ -1,6 +1,7 @@
 
 .div_poster{
-    flex-direction: center;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -8,12 +9,9 @@
     display: flex;
     flex-direction: column;
 
+
 }
 
-.body{
-
-    margin: 0%;
-}
 
 .div_Stories{
     flex-direction: row;
@@ -21,4 +19,16 @@
     overflow-x: auto; 
     white-space: nowrap; 
    
+}
+
+.div_navcell{
+
+    position: fixed;
+    left: 0%;
+    top: 95.6%
+    
+ 
+    
+
+
 }

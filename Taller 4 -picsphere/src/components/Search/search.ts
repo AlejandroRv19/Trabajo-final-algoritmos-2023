@@ -1,7 +1,7 @@
 import { loadCss } from "../../utils/main_styles";
 import searchstyle from "./searchstyle.css"
 
-export default class search extends HTMLElement {
+export default class searchc extends HTMLElement {
     constructor(){
         super();
         this.attachShadow({mode: "open"})
@@ -19,21 +19,23 @@ export default class search extends HTMLElement {
         Main_box.classList.add("Main_box");
         this.shadowRoot?.appendChild(Main_box);
         
-        const input_div = this.ownerDocument.createElement('div');
-        input_div.classList.add("input_div");
-        Main_box.appendChild(input_div);
+        const input_div_image = this.ownerDocument.createElement('div');
+        input_div_image.classList.add("input_div_image");
+        Main_box.appendChild(input_div_image);
         
-        const search_img = this.ownerDocument.createElement('img');
-        search_img.src = "ruta_de_la_imagen";
-        input_div.appendChild(search_img);
+        const search_img_logo = this.ownerDocument.createElement('img');
+        search_img_logo.classList.add("search_img_logo");
+        search_img_logo.src = ".././src/utils/img/Logo_picsphere.png";
+        input_div_image.appendChild(search_img_logo);
         
-        const input_div2 = this.ownerDocument.createElement('div');
-        input_div2.classList.add("input_div2");
-        Main_box.appendChild(input_div2);
+        const input_div_search = this.ownerDocument.createElement('div');
+        input_div_search.classList.add("input_div_search");
+        Main_box.appendChild(input_div_search);
         
         const search = this.ownerDocument.createElement('input');
         search.classList.add("search");
-        input_div2.appendChild(search);
+        search.placeholder = " 🜙 what you looking for?";
+        input_div_search.appendChild(search);
         
 
         
@@ -41,4 +43,4 @@ export default class search extends HTMLElement {
     }
 }
 
-customElements.define('app-search', search)
+customElements.define('app-searchc', searchc)

@@ -1,9 +1,9 @@
 import { addObserver } from "../../store";
 import { loadCss } from "../../utils/main_styles";
 import dasboardstyle from "./dasboardstyle.css"
-// import data_stories from "../../components/Stories/data_stories";
-// import { setAttributes } from "../../utils/atributtes";
-// import { AttrStories } from "../../utils/interfaces";
+import data_stories from "../../components/Stories/data_stories";
+import { setAttributes } from "../../utils/atributtes";
+import { AttrStories } from "../../utils/interfaces";
 
 export default class dasboard extends HTMLElement {
     constructor(){
@@ -18,7 +18,7 @@ export default class dasboard extends HTMLElement {
 
     render() {
 
-        // if(this.shadowRoot)this.shadowRoot.innerHTML = "";
+         if(this.shadowRoot)this.shadowRoot.innerHTML = "";
 
         loadCss(this, dasboardstyle)
 
@@ -29,10 +29,10 @@ export default class dasboard extends HTMLElement {
 
 
         const div_search = this.ownerDocument.createElement('div');
-        div_search.classList.add ("div_Stories")
+        div_search.classList.add ("div_search")
         main_box.appendChild(div_search);
 
-        const search = this.ownerDocument.createElement('app-search');
+        const search = this.ownerDocument.createElement('app-searchc');
         search.classList.add ("search")
         div_search.appendChild(search)
 

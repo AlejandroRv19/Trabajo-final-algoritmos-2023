@@ -19,7 +19,7 @@
         justify-content: center;
     }
 
-
+      
 
 
      /* Css del texto de password */
@@ -49,7 +49,7 @@
         border: none;
         cursor: pointer;
         border-radius: 10px;
-        width: 370px;
+        width: 399px;
     }
 
     .button:hover {

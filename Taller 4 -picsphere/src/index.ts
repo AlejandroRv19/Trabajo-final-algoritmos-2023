@@ -100,7 +100,7 @@ class AppContainer extends HTMLElement {
         user_profile_wrapper.classList.add("user_profile_wrapper")
         Main_wrapper.appendChild(user_profile_wrapper);
 
-        const profile = this.ownerDocument.createElement('user_profile');
+        const profile = this.ownerDocument.createElement('app-user_profile');
         user_profile_wrapper.appendChild(profile)
 
        

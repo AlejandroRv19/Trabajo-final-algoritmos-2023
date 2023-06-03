@@ -1,11 +1,14 @@
+:host{
+  display: flex;
+  justify-content:center;
+}
+
 .Main_box {
     background-color: #FAFAFA;     
     border: 1px solid #77D4FF;    
     padding: 10px;
     border-radius: 10px;
     flex-direction: center;
-    width: 85%;
-    margin: 0  5%;
     
   }
   
