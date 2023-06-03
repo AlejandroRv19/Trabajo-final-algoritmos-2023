@@ -1,34 +1,13 @@
-
 .div_poster{
-    display: flex;
-    justify-content: center;
+
+
+    flex-direction: center;
 }
 
 
-.main_box{
-    display: flex;
-    flex-direction: column;
 
 
-}
+.body{
 
-
-.div_Stories{
-    flex-direction: row;
-    display: flex;
-    overflow-x: auto; 
-    white-space: nowrap; 
-   
-}
-
-.div_navcell{
-
-    position: fixed;
-    left: 0%;
-    top: 95.6%
-    
- 
-    
-
-
+    margin: 0%;
 }

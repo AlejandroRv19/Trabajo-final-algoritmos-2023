@@ -11,20 +11,6 @@ export default class notification extends HTMLElement {
     render() {
 
 
-        const Main_wrapper = this.ownerDocument.createElement('section');
-        Main_wrapper.classList.add("Main_wrapper")
-        this.shadowRoot?.appendChild(Main_wrapper);
-
-        const divnotificaction = this.ownerDocument.createElement('div');
-        divnotificaction.classList.add("divnotificaction")
-        Main_wrapper.appendChild(Main_wrapper);
-
-        
-
-
-
-
-       
 
        
     }

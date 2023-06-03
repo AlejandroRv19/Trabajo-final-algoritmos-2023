@@ -1,7 +1,9 @@
-import { loadCss } from "../../utils/main_styles";
-import searchstyle from "./searchstyle.css"
+import { loadCss } from "../Search/search.css";
+import posterbstyle from "./posterbstyle.css"
 
-export default class searchc extends HTMLElement {
+
+
+export default class Search extends HTMLElement {
     constructor(){
         super();
         this.attachShadow({mode: "open"})
@@ -12,35 +14,26 @@ export default class searchc extends HTMLElement {
     }
 
     render() {
-
-        loadCss(this, searchstyle);
-
+              
+        loadCss(this, posterbstyle)
+        
         const Main_box = this.ownerDocument.createElement('section');
-        Main_box.classList.add("Main_box");
+        Main_box.classList.add("Main_box")
         this.shadowRoot?.appendChild(Main_box);
         
-        const input_div_image = this.ownerDocument.createElement('div');
-        input_div_image.classList.add("input_div_image");
-        Main_box.appendChild(input_div_image);
-        
-        const search_img_logo = this.ownerDocument.createElement('img');
-        search_img_logo.classList.add("search_img_logo");
-        search_img_logo.src = ".././src/utils/img/Logo_picsphere.png";
-        input_div_image.appendChild(search_img_logo);
-        
-        const input_div_search = this.ownerDocument.createElement('div');
-        input_div_search.classList.add("input_div_search");
-        Main_box.appendChild(input_div_search);
-        
-        const search = this.ownerDocument.createElement('input');
-        search.classList.add("search");
-        search.placeholder = " 🜙 what you looking for?";
-        input_div_search.appendChild(search);
-        
+        const contentDiv = this.ownerDocument.createElement('div');
+        contentDiv.classList.add("contentDiv");
+        Main_box.appendChild(contentDiv);
+
+        const Search_input= this.ownerDocument.createElement('input');
+        Search_input.classList.add("Search_input");
+        Search_input.innerHTML = '<img src=".././src/utils/img/Search.png" alt="Search" />'
+        contentDiv.appendChild(Search_input);
 
         
+
         
     }
 }
 
-customElements.define('app-searchc', searchc)
+customElements.define('app-poster_Search', Search)

@@ -1,21 +1,10 @@
 .Main_box {
     display: flex;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    align-content: center;
+    align-items: flex-start;
   }
   
-
+  .profile_image_div,
   .profile_name_div {
-   
-    margin-left: 5%; 
-    
+    margin-right: 10px; 
   }
   
-  .profile_image_div{
-    margin-left: 1.5%; 
-
-  }
-
-  
- 

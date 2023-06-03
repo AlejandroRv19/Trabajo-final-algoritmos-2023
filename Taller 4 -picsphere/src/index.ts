@@ -5,7 +5,6 @@ import { Screens } from "./types/store";
 import { loadCss } from "./utils/main_styles";
 import index from "./utils/index.css"
 
-
 class AppContainer extends HTMLElement {
     constructor(){
         super();
@@ -76,7 +75,7 @@ class AppContainer extends HTMLElement {
         message_wrapper.classList.add("message_wrapper")
         Main_wrapper.appendChild(message_wrapper);
 
-        const message = this.ownerDocument.createElement('app-message');
+        const message = this.ownerDocument.createElement('app-messagess');
         message_wrapper.appendChild(message);
 
 
@@ -100,7 +99,7 @@ class AppContainer extends HTMLElement {
         user_profile_wrapper.classList.add("user_profile_wrapper")
         Main_wrapper.appendChild(user_profile_wrapper);
 
-        const profile = this.ownerDocument.createElement('app-user_profile');
+        const profile = this.ownerDocument.createElement('user_profile');
         user_profile_wrapper.appendChild(profile)
 
        

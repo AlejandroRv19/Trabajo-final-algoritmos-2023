@@ -11,18 +11,13 @@ export default class user_profile extends HTMLElement {
     render() {
 
 
-        const Main_box = this.ownerDocument.createElement('section');
-        Main_box.classList.add("Main_box")
-        this.shadowRoot?.appendChild(Main_box);
+        const Main_wrapper = this.ownerDocument.createElement('section');
+        Main_wrapper.classList.add("Main_wrapper")
+        this.shadowRoot?.appendChild(Main_wrapper);
 
-        
-        const div_profile_user = this.ownerDocument.createElement('div');
-        div_profile_user.classList.add("div_profile_user")
-        Main_box.appendChild(div_profile_user);
+       
 
-        const profile_user = this.ownerDocument.createElement('app-profileuser');
-        profile_user.classList.add("profile_user")
-        div_profile_user.appendChild(profile_user);
+       
     }
 }
 

@@ -1,6 +1,3 @@
-import { loadCss } from "../../../utils/main_styles";
-import posterL from "./posterL.css"
-
 export default class poster_likes extends HTMLElement {
     constructor(){
         super();
@@ -12,9 +9,6 @@ export default class poster_likes extends HTMLElement {
     }
 
     render() {
-
-        loadCss(this,posterL )
-        
         const Main_box = this.ownerDocument.createElement('section');
         this.shadowRoot?.appendChild(Main_box);
 

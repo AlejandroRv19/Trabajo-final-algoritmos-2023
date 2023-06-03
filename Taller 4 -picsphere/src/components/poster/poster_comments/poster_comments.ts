@@ -1,6 +1,3 @@
-import { loadCss } from "../../../utils/main_styles";
-import posterC from "./posterC.css"
-
 export default class poster_comments extends HTMLElement {
     constructor(){
         super();
@@ -13,8 +10,6 @@ export default class poster_comments extends HTMLElement {
 
     render() {
 
-        loadCss(this, posterC)
-
         
         const Main_box = this.ownerDocument.createElement('section');
         this.shadowRoot?.appendChild(Main_box);
@@ -26,7 +21,7 @@ export default class poster_comments extends HTMLElement {
         
        
         const commentsText = this.ownerDocument.createElement('p');
-        commentsText.innerText = "Samathan_rex: that was cool"
+        commentsText.innerText = "Samthatha that was cool"
         commentsDiv.appendChild(commentsText)
         
     }
