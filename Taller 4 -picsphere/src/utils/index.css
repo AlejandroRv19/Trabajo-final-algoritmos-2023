@@ -1,0 +1,45 @@
+.Main_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  body{
+
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    
+
+
+  }
+  
+  .Main_wrapper div {
+    align-self: center;
+    
+  }
+
+
+  .dasboard_wrapper{
+
+     display:none;
+    
+     
+
+  }
+  
+  .login_wrapper{
+
+
+    display:none;
+  }
+
+  .register_wrapper{
+    display:none;
+  }
+
+
+ 

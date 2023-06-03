@@ -2,12 +2,15 @@ import "./components/export"
 import "./screens/export"
 import { addObserver, appState } from "./store";
 import { Screens } from "./types/store";
+import { loadCss } from "./utils/main_styles";
+import index from "./utils/index.css"
+
 
 class AppContainer extends HTMLElement {
     constructor(){
         super();
         this.attachShadow({mode: "open"})
-        addObserver(this);
+        // addObserver(this);
     }
        
     connectedCallback() {
@@ -16,27 +19,28 @@ class AppContainer extends HTMLElement {
        
     render() {
 
+        loadCss (this, index)
 
-        switch (appState.screen) {
-            case Screens.LOGIN:
-              const login = this.ownerDocument.createElement("app-login");
-              this.shadowRoot?.appendChild(login);
-              break;
+        // switch (appState.screen) {
+        //     case Screens.LOGIN:
+        //       const login = this.ownerDocument.createElement("app-login");
+        //       this.shadowRoot?.appendChild(login);
+        //       break;
     
-            case Screens.REGISTER:
-              const signup = this.ownerDocument.createElement("app-register");
-              signup.innerText = "esta es la pantalla de signup";
-              this.shadowRoot?.appendChild(signup);
-              break;
+        //     case Screens.REGISTER:
+        //       const signup = this.ownerDocument.createElement("app-register");
+        //       signup.innerText = "esta es la pantalla de signup";
+        //       this.shadowRoot?.appendChild(signup);
+        //       break;
     
-            case Screens.DASBOARD:
-              const dasboard = this.ownerDocument.createElement("app-dasboard");
-              this.shadowRoot?.appendChild(dasboard);
-              break;
+        //     case Screens.DASBOARD:
+        //       const dasboard = this.ownerDocument.createElement("app-dasboard");
+        //       this.shadowRoot?.appendChild(dasboard);
+        //       break;
     
-            default:
-              break;
-          }
+        //     default:
+        //       break;
+        //   }
 
 
         const Main_wrapper = this.ownerDocument.createElement('section');
@@ -44,28 +48,28 @@ class AppContainer extends HTMLElement {
         this.shadowRoot?.appendChild(Main_wrapper);
         
 
-        // const dasboard_wrapper = this.ownerDocument.createElement('div');
-        // dasboard_wrapper.classList.add("dasboard_wrapper")
-        // Main_wrapper.appendChild(dasboard_wrapper);
+        const dasboard_wrapper = this.ownerDocument.createElement('div');
+        dasboard_wrapper.classList.add("dasboard_wrapper")
+        Main_wrapper.appendChild(dasboard_wrapper);
 
-        // const dasboard = this.ownerDocument.createElement('app-dasboard');
-        // dasboard_wrapper.appendChild(dasboard);
-
-
-        // // const login_wrapper = this.ownerDocument.createElement('div');
-        // login_wrapper.classList.add("login_wrapper")
-        // Main_wrapper.appendChild(login_wrapper);
-
-        // // const Login = this.ownerDocument.createElement('app-login');
-        // // login_wrapper.appendChild(Login);
+        const dasboard = this.ownerDocument.createElement('app-dasboard');
+        dasboard_wrapper.appendChild(dasboard);
 
 
-        // const register_wrapper = this.ownerDocument.createElement('div');
-        // register_wrapper.classList.add("register_wrapper")
-        // Main_wrapper.appendChild(register_wrapper);
+        const login_wrapper = this.ownerDocument.createElement('div');
+        login_wrapper.classList.add("login_wrapper")
+        Main_wrapper.appendChild(login_wrapper);
 
-        // const Register = this.ownerDocument.createElement('app-register');
-        // register_wrapper.appendChild(Register);
+        const Login = this.ownerDocument.createElement('app-login');
+        login_wrapper.appendChild(Login);
+
+
+        const register_wrapper = this.ownerDocument.createElement('div');
+        register_wrapper.classList.add("register_wrapper")
+        Main_wrapper.appendChild(register_wrapper);
+
+        const Register = this.ownerDocument.createElement('app-register');
+        register_wrapper.appendChild(Register);
 
 
         const message_wrapper = this.ownerDocument.createElement('div');
@@ -92,12 +96,12 @@ class AppContainer extends HTMLElement {
         search_wrapper.appendChild(search)
 
 
-        const profile_wrapper = this.ownerDocument.createElement('div');
-        profile_wrapper.classList.add("profile_wrapper")
-        Main_wrapper.appendChild(profile_wrapper);
+        const user_profile_wrapper = this.ownerDocument.createElement('div');
+        user_profile_wrapper.classList.add("user_profile_wrapper")
+        Main_wrapper.appendChild(user_profile_wrapper);
 
-        const profile = this.ownerDocument.createElement('app-profile');
-        profile_wrapper.appendChild(profile)
+        const profile = this.ownerDocument.createElement('app-user_profile');
+        user_profile_wrapper.appendChild(profile)
 
        
     }

@@ -1,6 +1,33 @@
-.hola{
+
+.div_poster{
+    display: flex;
+    justify-content: center;
+}
 
 
+.main_box{
+    display: flex;
+    flex-direction: column;
 
-    background-color: blue;
+
+}
+
+
+.div_Stories{
+    flex-direction: row;
+    display: flex;
+    overflow-x: auto; 
+    white-space: nowrap; 
+   
+}
+
+.div_navcell{
+
+    position: fixed;
+    justify-content: center;
+    margin-top: 226%;
+    margin-right: 600%;
+    
+
+
 }

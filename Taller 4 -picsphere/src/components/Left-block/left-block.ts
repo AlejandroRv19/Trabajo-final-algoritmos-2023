@@ -1,6 +1,4 @@
-import "./components/export"
-
-class left_block extends HTMLElement {
+export default class left_block extends HTMLElement {
     constructor(){
         super();
         this.attachShadow({mode: "open"})

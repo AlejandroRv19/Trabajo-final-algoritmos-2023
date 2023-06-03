@@ -1,0 +1,38 @@
+.Main_box {
+    background-color: #FFFFFF;
+    flex-direction: row;
+    display: flex;
+    border: 2px solid  rgba(84, 84, 84, 0.087);
+    width: 200%;
+    
+
+  }
+  
+  .nav_bar{
+    display: flex;
+    justify-content: center;
+     margin-top: 10px;
+    margin-bottom: 10px; 
+  }
+  
+  .nav_button {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .nav_button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 35px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  

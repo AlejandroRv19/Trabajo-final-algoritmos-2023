@@ -1,0 +1,45 @@
+.Main_box{
+
+
+    flex-direction: row;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 1.5%;
+}
+
+.button_div_Likes,
+.button_div_Comments,
+.button_div_Share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 2px;
+} 
+.button_div_Save{
+
+    margin-left: 190px;
+
+
+}
+.buttonComments,
+.buttonShare,
+.buttonSave {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.buttonComments img,
+.buttonShare img,
+.buttonSave img {
+  width: 24px;
+  height: 24px;
+}
+

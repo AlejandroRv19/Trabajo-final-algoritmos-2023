@@ -1,0 +1,31 @@
+.Main_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+
+  }
+  
+  .Div_storie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+  
+  .image {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    
+  }
+  
+  .Name_div {
+    margin-top: 10px; 
+  }
+  
+  .Name_storie {
+    font-size: 12px; 
+    font-weight: bold;
+  }
+  
