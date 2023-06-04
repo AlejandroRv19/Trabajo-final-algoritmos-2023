@@ -1,0 +1,48 @@
+.Main_box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.divnotification {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.divpicture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.divtext {
+    display: flex;
+    flex-direction: row;
+}
+
+.divpost {
+    display: flex;
+    justify-content: flex-end;
+    width: 15%;
+}
+
+.picture {
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post {
+    width: 100%;
+    
+}
+
+p {
+    margin: 0 1rem;
+}

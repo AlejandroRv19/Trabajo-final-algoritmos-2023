@@ -76,13 +76,13 @@ class AppContainer extends HTMLElement {
         message_wrapper.classList.add("message_wrapper")
         Main_wrapper.appendChild(message_wrapper);
 
-        const message = this.ownerDocument.createElement('app-message');
+        const message = this.ownerDocument.createElement('app-messagess');
         message_wrapper.appendChild(message);
 
 
         const notification_wrapper = this.ownerDocument.createElement('div');
         notification_wrapper.classList.add("notification_wrapper")
-        Main_wrapper.appendChild(message_wrapper);
+        Main_wrapper.appendChild(notification_wrapper);
 
         const notification = this.ownerDocument.createElement('app-notification');
         notification_wrapper.appendChild(notification)
@@ -102,6 +102,9 @@ class AppContainer extends HTMLElement {
 
         const profile = this.ownerDocument.createElement('app-user_profile');
         user_profile_wrapper.appendChild(profile)
+
+        
+        
 
        
     }

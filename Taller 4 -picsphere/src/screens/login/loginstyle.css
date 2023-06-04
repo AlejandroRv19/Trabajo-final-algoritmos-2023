@@ -1,5 +1,7 @@
 
-/* Css de la imagen*/
+.main_box{
+    margin-top: 20%;
+}
 
 
    .imageBox {
@@ -19,7 +21,7 @@
         justify-content: center;
     }
 
-
+      
 
 
      /* Css del texto de password */
@@ -62,4 +64,22 @@
 
 
         margin-top: 90px;
+    }
+
+
+    @media (min-width: 800px)  {
+
+        .forgot_password_box {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-right: 34%;
+            margin-bottom: 2%;
+        }
+    
+      #main_box{
+        margin-top: 1%;
+      }
+
+
     }

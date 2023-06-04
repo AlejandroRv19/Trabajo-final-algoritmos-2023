@@ -1,0 +1,14 @@
+.divusername {
+    display: flex;
+    justify-content: center;
+}
+
+.username {
+    margin: 1rem 0;
+}
+
+.divnotificaction {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}

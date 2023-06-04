@@ -1,45 +1,112 @@
 .Main_wrapper {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-
+    align-items: center; */
+   
   }
 
   body{
 
     margin: 0%;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     
-
-
   }
   
   .Main_wrapper div {
     align-self: center;
-    
-  }
+    }
 
 
   .dasboard_wrapper{
 
-     display:none;
-    
-     
-
-  }
+     display:show;
+     }
   
   .login_wrapper{
-
-
+    
     display:none;
+    margin-top: 40%;
   }
 
   .register_wrapper{
     display:none;
+    margin-top: 40%;
+    
   }
+
+  .message_wrapper{
+
+    display:none;
+
+  }
+
+  .notification_wrapper{
+    display:none;
+
+  }
+
+  .search_wrapper{
+
+    display:none;
+  }
+
+  .user_profile_wrapper{
+
+    display:none;
+  }
+
+
+  /* responsive */
+  @media (min-width: 700px) {
+    
+    .dasboard_wrapper{
+
+      background-position: 0%;
+      margin-left: 10%;
+      }
+   
+   .login_wrapper{
+     
+     display:show;
+     margin-top: 0%;
+   }
+ 
+   .register_wrapper{
+    background-position: 0%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+     
+   }
+ 
+   .message_wrapper{
+ 
+    background-position: 0%;
+ 
+   }
+ 
+   .notification_wrapper{
+    background-position: 0%;
+   }
+ 
+   .search_wrapper{
+ 
+    background-position: 0%;
+   }
+ 
+   .user_profile_wrapper{
+ 
+    background-position: 0%;
+   }
+ 
+
+
+
+
+  }
+   
+
 
 
  

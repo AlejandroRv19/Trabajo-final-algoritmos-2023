@@ -25,7 +25,7 @@ export default class poster_button extends HTMLElement {
         Main_box.appendChild(buttonLikesDiv);
 
         const buttonLikes = this.ownerDocument.createElement('button');
-        buttonLikes.classList.add("buttonComments");
+        buttonLikes.classList.add("buttonLikes");
         buttonLikes.innerHTML = '<img src=".././src/utils/img/like_img.png" alt="likes" />'
         buttonLikesDiv.appendChild(buttonLikes);
 

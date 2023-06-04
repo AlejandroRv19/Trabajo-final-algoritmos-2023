@@ -24,7 +24,8 @@
 }
 .buttonComments,
 .buttonShare,
-.buttonSave {
+.buttonSave, 
+.buttonLikes{
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -38,7 +39,8 @@
 
 .buttonComments img,
 .buttonShare img,
-.buttonSave img {
+.buttonSave img 
+.buttonLikes img{
   width: 24px;
   height: 24px;
 }

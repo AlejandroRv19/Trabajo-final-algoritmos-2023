@@ -41,19 +41,19 @@ export default class dasboard extends HTMLElement {
         div_Stories.classList.add ("div_Stories")
         main_box.appendChild(div_Stories);
 
-        const stories = this.ownerDocument.createElement('app-stories');
-        stories.classList.add ("stories")
-        div_Stories.appendChild(stories)
+        // const stories = this.ownerDocument.createElement('app-stories');
+        // stories.classList.add ("stories")
+        // div_Stories.appendChild(stories)
 
-        // data_stories.forEach(({name,image}) => {
-        //         const appStories = this.ownerDocument.createElement("app-stories");
-        //         const cardProps: AttrStories = {
-        //             name: `${name}`,
-        //             image: `${image}`,
-        //         }
-        //         setAttributes<AttrStories>(cardProps, appStories);
-        //         div_Stories.appendChild(appStories)
-        //     })
+        data_stories.forEach(({name,image}) => {
+                const appStories = this.ownerDocument.createElement("app-stories");
+                const cardProps: AttrStories = {
+                    name: `${name}`,
+                    image: `${image}`,
+                }
+                setAttributes<AttrStories>(cardProps, appStories);
+                div_Stories.appendChild(appStories)
+            })
 
 
         const div_poster = this.ownerDocument.createElement('div');
@@ -65,6 +65,15 @@ export default class dasboard extends HTMLElement {
         div_poster.appendChild(poster);
 
 
+        const div_poster2 = this.ownerDocument.createElement('div');
+        div_poster2.classList.add ("div_poster")
+        main_box.appendChild(div_poster2);
+       
+        const poster2 = this.ownerDocument.createElement('app-poster');
+        poster2.classList.add ("poster")
+        div_poster2.appendChild(poster2);
+
+
         const div_navcell = this.ownerDocument.createElement('div');
         div_navcell.classList.add ("div_navcell")
         main_box.appendChild(div_navcell);
@@ -72,6 +81,15 @@ export default class dasboard extends HTMLElement {
         const navcell = this.ownerDocument.createElement('app-navcellphone');
         navcell.classList.add ("navcell")
         div_navcell.appendChild(navcell);
+         
+
+        const div_nav_desk = this.ownerDocument.createElement('div');
+        div_nav_desk.classList.add ("div_nav_desk")
+        main_box.appendChild(div_nav_desk);
+
+        const nav_desk = this.ownerDocument.createElement('app-desk');
+        nav_desk.classList.add ("nav_desk")
+        div_nav_desk.appendChild(nav_desk);
 
         
 

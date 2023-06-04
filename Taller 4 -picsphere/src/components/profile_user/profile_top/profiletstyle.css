@@ -1,0 +1,38 @@
+.Main_box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+  }
+  
+  .arrow_button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    padding: 5px;
+    justify-content: left;
+    margin-top: 70%;
+    
+  }
+  
+  .arrow_button:hover {
+
+    cursor: pointer;
+
+  }
+
+ .div_top{ 
+    margin-right: 25%;
+    margin-left: 9%
+
+
+ }
+
+ .div_top2{
+
+    margin-top: 1%;
+ }
+
+ 
+  
+  

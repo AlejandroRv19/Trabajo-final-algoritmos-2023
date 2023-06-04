@@ -8,6 +8,7 @@
 .main_box{
     display: flex;
     flex-direction: column;
+    margin-top: 5%;
 
 
 }
@@ -18,16 +19,83 @@
     display: flex;
     overflow-x: auto; 
     white-space: nowrap; 
+    margin: 5%;
+    gap: 3%;
+  
    
 }
 
 .div_navcell{
 
     position: fixed;
-    justify-content: center;
-    margin-top: 226%;
-    margin-right: 600%;
+    left: 0%;
+    top: 95.6%
+    
+ 
     
 
+
+}
+@media (max-width: 900px) {
+
+    .div_nav_desk{
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 700px) {
+
+    .main_box{
+        display: flex;
+        flex-direction: column;
+
+    
+    
+    }
+    .div_Stories{
+        flex-direction: row;
+        display: flex;
+        overflow-x: auto; 
+        margin-left: 35%;
+        gap: 3%;
+        width: 30%;
+      
+
+       
+    }
+
+    .div_navcell{
+
+        position: fixed;
+        left: 0%;
+        top: 50%;
+        width: 33%;
+        display: none;
+        
+    
+    }
+
+
+    .div_nav_desk{
+        display: show;
+        
+        bottom:20%;
+        
+
+     }
+    
+
+
+    .div_search{
+
+        margin-left: 30%;
+    }
+    
+    .div_poster2{
+
+        margin-top: 20%;
+    }
 
 }

@@ -5,18 +5,18 @@ import storiestyle from "./storiestyle.css"
 
 export default class stories extends HTMLElement {
 
-    // name: string = "";
-    // image: string= "";
+    name: string = "";
+    image: string= "";
 
 
-    // static get observedAttributes(){
-    //     return["name", "image"];
-    // }
+    static get observedAttributes(){
+        return["name", "image"];
+    }
 
-    // attributeChangedCallback(AttrStories: keyof AttrStories, _:unknown, newValue:string){
-    //     this[AttrStories] = newValue;
-    //     this.render();
-    // }
+    attributeChangedCallback(AttrStories: keyof AttrStories, _:unknown, newValue:string){
+        this[AttrStories] = newValue;
+        this.render();
+    }
 
 
     constructor(){
@@ -44,8 +44,8 @@ export default class stories extends HTMLElement {
         Main_box.appendChild(Div_storie);
 
         const image = this.ownerDocument.createElement('img');
-        image.classList.add("image")
-        // image.src = this.image;
+        image.classList.add("image_stories")
+        image.src = this.image;
         image.alt = "Image of the story";
         Div_storie.appendChild(image);
 
@@ -55,7 +55,7 @@ export default class stories extends HTMLElement {
 
         const Name_storie = this.ownerDocument.createElement('div');
         Name_storie.classList.add("Name_storie");
-        // Name_storie.textContent = this.name,
+        Name_storie.textContent = this.name,
         Name_div.appendChild(Name_storie);
     }
 }

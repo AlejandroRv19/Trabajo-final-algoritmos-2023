@@ -1,0 +1,86 @@
+.Search_input {
+    width: 300px; 
+    height: 20px; 
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px; 
+    background-color: #F5F5F5;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+  }
+
+.contentDiv{ 
+display: flex;
+justify-content: center;
+align-items: center; 
+flex-direction: column;
+margin-bottom: 100px;
+
+
+
+}
+
+.content_mesagges{
+    width: 90%;
+    margin-top: 70px;
+    
+}
+.content_mesagges *{
+   margin-left: 5px;
+}
+
+.img_friends{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+.content_mesagges{
+display: flex;
+width: 100%;
+
+}
+.img_div{
+float: left;
+margin-right: 10px;
+display: flex;
+text-align: left;
+}
+
+.name_friend {
+width: 100%;
+display: flex;
+} 
+
+.container_generalM {
+    position: relative;
+    
+}
+.text_containerH {
+    display: flex;
+    width: 200px;
+    height: 20px;
+    align-items: center; 
+}
+.message_hour{
+color: #77D4FF;
+margin-left: 25px;
+}
+.message_friend{
+color: #6d6d6d;
+
+width: 200px;
+
+}
+
+h1{
+    margin-left: 15px;
+}
+
+.Main_wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+
+

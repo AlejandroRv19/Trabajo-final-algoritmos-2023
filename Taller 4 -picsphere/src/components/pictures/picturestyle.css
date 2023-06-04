@@ -1,0 +1,17 @@
+.Main_box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 0.5rem;
+    gap: 8px;
+}
+
+.divPictures {
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.divPictures img {
+    width: 100%;
+    border-radius: 12px;
+}

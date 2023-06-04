@@ -1,3 +1,7 @@
+import { loadCss } from "../../../utils/main_styles";
+import profiletstyle from "./profiletstyle.css"
+
+
 export default class profile_top extends HTMLElement {
     constructor(){
         super();
@@ -10,6 +14,8 @@ export default class profile_top extends HTMLElement {
 
     render() {
 
+        loadCss(this, profiletstyle)
+
         const Main_box = this.ownerDocument.createElement('section');
         Main_box.classList.add("Main_box")
         this.shadowRoot?.appendChild(Main_box);
@@ -18,20 +24,20 @@ export default class profile_top extends HTMLElement {
         div_top.classList.add("div_top")
         Main_box.appendChild(div_top);
 
-        const div_button = this.ownerDocument.createElement('button');
-        div_button.classList.add("div_button")
-        div_button.innerText = ("Latiana")
-        div_top.appendChild(div_button);
+        const arrow_button = this.ownerDocument.createElement('button');
+        arrow_button.classList.add("arrow_button")
+        arrow_button.innerHTML = '<img src=".././src/utils/img/arrow_back.png" alt="arrow_back" />'
+        div_top.appendChild(arrow_button);
 
 
         const div_top2 = this.ownerDocument.createElement('div');
         div_top2.classList.add("div_top2")
-        Main_box.appendChild(div_top);
+        Main_box.appendChild(div_top2);
 
-        const div_h2 = this.ownerDocument.createElement('h1');
-        div_h2.classList.add("div_h2")
-        div_h2.innerText = ("Latiana")
-        div_top2.appendChild(div_h2);
+        const div_h1 = this.ownerDocument.createElement('h3');
+        div_h1.classList.add("div_h1")
+        div_h1.innerText = ("Latiana")
+        div_top2.appendChild(div_h1);
 
         
     }

@@ -73,14 +73,7 @@ export default class login extends HTMLElement {
         div_btn.appendChild(button);
 
 
-        const div_navcell = this.ownerDocument.createElement('div');
-        div_navcell.classList.add("div_navcell")
-        Main_box.appendChild(div_navcell);
-
-        const navcell = this.ownerDocument.createElement('app-navcellphone');
-        navcell.classList.add ("navcell")
-        div_navcell.appendChild(navcell);
-
+        
        
     }
 }
